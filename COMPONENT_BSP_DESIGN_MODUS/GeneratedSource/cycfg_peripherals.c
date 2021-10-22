@@ -4,14 +4,13 @@
 * Description:
 * Peripheral Hardware Block configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.4.0.5721
-* mtb-pdl-cat1 3.0.0.10651
-* personalities 5.0.0.0
-* udd 3.0.0.1377
+* Tools Package 2.2.0.2801
+* latest-v2.X 2.2.1.9614
+* personalities 4.0.0.0
+* udd 3.0.0.1125
 *
 ********************************************************************************
-* Copyright 2021 Cypress Semiconductor Corporation (an Infineon company) or
-* an affiliate of Cypress Semiconductor Corporation.
+* Copyright 2021 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,11 +30,11 @@
 
 cy_stc_csd_context_t cy_csd_0_context = 
 {
-    .lockKey = CY_CSD_NONE_KEY,
+	.lockKey = CY_CSD_NONE_KEY,
 };
 
 
 void init_cycfg_peripherals(void)
 {
-    Cy_SysClk_PeriphAssignDivider(PCLK_CSD_CLOCK, CY_SYSCLK_DIV_8_BIT, 0U);
+	Cy_SysClk_PeriphAssignDivider(PCLK_CSD_CLOCK, CY_SYSCLK_DIV_8_BIT, 0U);
 }
