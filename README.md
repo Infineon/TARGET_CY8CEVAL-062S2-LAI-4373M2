@@ -2,10 +2,10 @@
 
 ## Overview
 
-The CY8CEVAL-062S2 PSoC 62S2 Evaluation Kit enables you to evaluate and develop applications using PSoC 62 MCU. The PSoC 62S2 evaluation kit features an M.2 interface that enables you to connect the supported M.2 radio cards based on AIROC Wi-Fi/Bluetooth combo devices. It comes with industry-leading CapSense for touch buttons and slider, on-board debugger/programmer with KitProg3, microSD card interface, 512-Mb Quad-SPI NOR flash, PDM-PCM microphone interface, mikroBUS add-on board interface for peripheral expansion, OPTIGA Trust M device.
+The CY8CEVAL-062S2 PSoC™ 62S2 Evaluation Kit enables you to evaluate and develop applications using PSoC™ 62 MCU. The PSoC™ 62S2 evaluation kit features an M.2 interface that enables you to connect the supported M.2 radio cards based on AIROC™ Wi-Fi/Bluetooth combo devices. It comes with industry-leading CAPSENSE™ for touch buttons and slider, on-board debugger/programmer with KitProg3, microSD card interface, 512-Mb Quad-SPI NOR flash, PDM-PCM microphone interface, mikroBUS add-on board interface for peripheral expansion, OPTIGA Trust M device.
     
 **Note:**
-CY8CEVAL-062S2-LAI-4373M2 is the board support package for the PSoC 62S2 Evaluation Kit in combination with the Sterling-LWB5+ M.2 radio module and supports PSoC 6 MCU examples and Wi-Fi/Bluetooth connectivity examples.
+CY8CEVAL-062S2-LAI-4373M2 is the board support package for the PSoC™ 62S2 Evaluation Kit in combination with the Sterling-LWB5+ M.2 radio module and supports PSoC™ 6 MCU examples and Wi-Fi/Bluetooth connectivity examples.
 
 ![](docs/html/board.png)
 
@@ -16,14 +16,14 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 ### Kit Features:
 
 * Support of up to 2MB Flash and 1MB SRAM
-* Dedicated M.2 interface to connect with M.2 radio modules based on AIROC Wi-Fi/Bluetooth combo devices.
+* Dedicated M.2 interface to connect with M.2 radio modules based on AIROC™ Wi-Fi/Bluetooth combo devices.
 * mikroBUS add-on board interface for peripheral expansion.
 * Delivers dual-cores, with a 150-MHz Arm Cortex-M4 as the primary application processor and a 100-MHz Arm Cortex-M0+ as the secondary processor for low-power operations.
-* Supports Full-Speed USB, capacitive-sensing with CapSense, a PDM-PCM digital microphone interface, a Quad-SPI interface, 13 serial communication blocks, 7 programmable analog blocks, and 56 programmable digital blocks.
+* Supports Full-Speed USB, capacitive-sensing with CAPSENSE, a PDM-PCM digital microphone interface, a Quad-SPI interface, 13 serial communication blocks, 7 programmable analog blocks, and 56 programmable digital blocks.
 
 ### Kit Contents:
 
-* PSoC 62S2 Evaluation Board
+* PSoC™ 62S2 Evaluation Board
 * Laird Connectivity Sterling-LWB5+ Wi-Fi/Bluetooth M.2 radio module
 * USB Type-A to Micro-B cable
 * Four jumper wires (4 inches each)
@@ -42,6 +42,7 @@ Components:
 Defines:
 * CYBSP_WIFI_CAPABLE - This define, disabled by default, causes the BSP to initialize the interface to an onboard wireless chip if it has one.
 * CY_USING_HAL - This define, enabled by default, specifies that the HAL is intended to be used by the application. This will cause the BSP to include the applicable header file and to initialize the system level drivers.
+* CYBSP_CUSTOM_SYSCLK_PM_CALLBACK - This define, disabled by default, causes the BSP to skip registering its default SysClk Power Management callback, if any, and instead to invoke the application-defined function `cybsp_register_custom_sysclk_pm_callback` to register an application-specific callback.
 
 ### Clock Configuration
 
@@ -71,7 +72,7 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 * [CY8CEVAL-062S2-LAI-4373M2 Documentation](https://www.cypress.com/documentation/development-kitsboards/psoc-62s2-evaluation-kit-cy8ceval-062s2)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
 [api]: https://infineon.github.io/TARGET_CY8CEVAL-062S2-LAI-4373M2/html/modules.html
 [settings]: https://infineon.github.io/TARGET_CY8CEVAL-062S2-LAI-4373M2/html/md_bsp_settings.html

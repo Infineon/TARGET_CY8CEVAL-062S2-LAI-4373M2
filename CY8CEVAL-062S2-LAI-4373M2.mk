@@ -55,7 +55,7 @@ COMPONENTS+=CM0P_SLEEP BSP_DESIGN_MODUS PSOC6HAL 4373 STERLING-LWB5plus HCI-UART
 DEFINES+=CY_USING_HAL
 endif
 
-# Ignore the default CYW4374 clm blob. This BSP uses the CLM blob for Laird Connectivity's Sterling-LWB5+ M.2 radio module
+# Ignore the default CYW4373 clm blob. This BSP uses the CLM blob for Laird Connectivity's Sterling-LWB5+ M.2 radio module
 CY_IGNORE+=$(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/clm/COMPONENT_4373/4373A0_clm_blob.c \
            $(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/clm/COMPONENT_4373/4373A0-mfgtest_clm_blob.c \
            $(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/clm/COMPONENT_4373/clm_resources.h

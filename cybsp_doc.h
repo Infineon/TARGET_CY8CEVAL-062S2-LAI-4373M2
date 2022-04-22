@@ -24,7 +24,11 @@
 #include "cyhal_pin_package.h"
 #endif
 #if defined(COMPONENT_BSP_DESIGN_MODUS) || defined(COMPONENT_CUSTOM_DESIGN_MODUS)
+/** test */
 #include "cycfg.h"
+#elif defined(COMPONENT_CAT4) /* CAT4 does not have configurators so the BSP defines pins in a
+                               * non-generated header */
+#include "cybsp_pins.h"
 #endif
 
 #if defined(__cplusplus)
@@ -736,7 +740,7 @@ extern "C" {
 /**
  * \addtogroup group_bsp_pins_capsense Capsense
  * \{
- * Pins connected to CapSense sensors on the board.
+ * Pins connected to CAPSENSE™ sensors on the board.
  */
 
 #ifdef CYBSP_CSD_TX
