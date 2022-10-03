@@ -1,6 +1,5 @@
 # CY8CEVAL-062S2-LAI-4373M2 BSP Release Notes
-The CY8CEVAL-062S2 PSoC™ 62S2 Evaluation Kit enables you to evaluate and develop applications using PSoC™ 62 MCU. The PSoC™ 62S2 evaluation kit features an M.2 interface that enables you to connect the supported M.2 radio cards based on AIROC™ Wi-Fi/Bluetooth combo devices. It comes with industry-leading CAPSENSE™ for touch buttons and slider, on-board debugger/programmer with KitProg3, microSD card interface, 512-Mb Quad-SPI NOR flash, PDM-PCM microphone interface, mikroBUS add-on board interface for peripheral expansion, OPTIGA Trust M device.
-    
+The CY8CEVAL-062S2 PSoC™ 62S2 Evaluation Kit enables you to evaluate and develop applications using PSoC™ 62 MCU. The PSoC™ 62S2 evaluation kit features an M.2 interface that enables you to connect the supported M.2 radio cards based on AIROC™ Wi-Fi/Bluetooth combo devices. It comes with industry-leading CAPSENSE™ for touch buttons and slider, on-board debugger/programmer with KitProg3, microSD card interface, 512-Mb Quad-SPI NOR flash, PDM-PCM microphone interface, mikroBUS add-on board interface for peripheral expansion, OPTIGA Trust M device.     
 **Note:**
 CY8CEVAL-062S2-LAI-4373M2 is the board support package for the PSoC™ 62S2 Evaluation Kit in combination with the Sterling-LWB5+ M.2 radio module and supports PSoC™ 6 MCU examples and Wi-Fi/Bluetooth connectivity examples.
 
@@ -18,9 +17,16 @@ The CY8CEVAL-062S2-LAI-4373M2 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v4.0.0
+Note: This revision is only compatible with ModusToolbox Tools 3.0 and newer.
+* Removed default dependency on CAPSENSE™ middleware. The library manager can be used to add this dependency if desired.
+* Updated recipe-make, core-make, and PDL to new major versions
+* Regenerated code with Configurators from ModusToolbox™ v3.0.0
+* Renamed top level board makefile to bsp.mk
+* Removed version.xml file in favor of new props.json
 #### v3.1.0
 * Added optional macro CYBSP_CUSTOM_SYSCLK_PM_CALLBACK to allow overriding default clock power management behavior.
-* Enable AIROC BLE stack for MCUs with an integrated BLE radio
+* Enable AIROC™ BLE stack for MCUs with an integrated BLE radio
 #### v3.0.0
 * Updated to HAL dependency to v2.0.0
 * Updated CAPSENSE™ dependency to v3.0.0
@@ -75,12 +81,12 @@ This version of the CY8CEVAL-062S2-LAI-4373M2 BSP was validated for compatibilit
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox™ Software Environment        | 2.4.0   |
+| ModusToolbox™ Software Environment        | 3.0.0   |
 | GCC Compiler                              | 10.3.1  |
-| IAR Compiler                              | 8.4     |
-| ARM Compiler                              | 6.11    |
+| IAR Compiler                              | 9.30.1  |
+| ARM Compiler                              | 6.16    |
 
-Minimum required ModusToolbox™ Software Environment: v2.4.0
+Minimum required ModusToolbox™ Software Environment: v3.0.0
 
 ### More information
 * [CY8CEVAL-062S2-LAI-4373M2 BSP API Reference Manual][api]
@@ -92,4 +98,4 @@ Minimum required ModusToolbox™ Software Environment: v2.4.0
 [api]: https://infineon.github.io/TARGET_CY8CEVAL-062S2-LAI-4373M2/html/modules.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2021.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
